@@ -12,6 +12,9 @@ import { ColorRing } from 'react-loader-spinner'
 import Swal from 'sweetalert2';
 import { useRef } from 'react';
 import { useDownloadExcel } from 'react-export-table-to-excel';
+import {CSVLink,CSVDownload} from "react-csv"
+
+
 
 
 
@@ -23,11 +26,13 @@ function Viewlist() {
   const [search, setsearch] = useState([])
   const [empty, setempty] = useState(true)
   const [loding, setloding] = useState(true)
-
+ 
 
 
 
   const tableRef = useRef()
+
+  const [tabeldata,settabeldata]=useState(tableRef.current)
 
 
     const {onDownload}=useDownloadExcel({
@@ -323,7 +328,11 @@ function Viewlist() {
 
 
             
-              <button onClick={onDownload} className='excel-btn'  > Export excel </button>
+              {/* <button onClick={onDownload} className='excel-btn'  > Export excel </button> */}
+
+              <CSVLink data={res} > export excel  </CSVLink> 
+
+              
 
             
 
