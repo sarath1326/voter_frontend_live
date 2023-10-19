@@ -28,7 +28,7 @@ function Form() {
         initialValues: initialValues,
         validationSchema: validationSchema,
 
-        onSubmit: (value) => {
+        onSubmit: (value,action) => {
 
               axios.post("/formsubmit",value).then((respo)=>{
 
@@ -39,6 +39,10 @@ function Form() {
                   }else if(respo.data.flag){
 
                     message.success("your data added")
+                   
+                    action.resetForm();
+
+
                   }else{
 
                        message.error("somthing err")
