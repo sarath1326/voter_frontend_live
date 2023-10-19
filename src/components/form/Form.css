@@ -1,0 +1,59 @@
+
+
+
+
+  .form-main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(208, 191, 255);
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .form-box-main{
+
+    width: 400px;
+    height:500px;
+    background-color:antiquewhite;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+  
+  }
+
+
+  .form-title{
+
+   margin-left: 80px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .form-box-main input{
+
+    width: 300px;
+    height: 35px;
+  }
+
+
+    .form-btn{
+
+        border: none;
+        width: 100px;
+        height: 30px;
+        background-color: brown;
+        color: white;
+        border-radius: 5px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    .form-box-main span{
+
+        color: red;
+    }
+
+

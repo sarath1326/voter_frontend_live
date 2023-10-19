@@ -1,0 +1,119 @@
+
+
+
+
+.view-main{
+
+      width: 100%;
+   height: 130vh;
+      background-color:rgb(208, 191, 255);
+     padding-top: 100px;
+
+}
+
+table th, td{
+      text-align: center;
+      
+}
+
+.view-search-main{
+      width: 100%;
+      height: 70px;
+     
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.view-serch-box{
+      width: 500px;
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      text-align: center;
+      background-color: aliceblue;
+
+
+}
+
+
+.view-delete-icone{
+
+
+      font-size: 15px;
+      color: red;
+}
+
+
+
+.paginationBttns{
+
+      width: 90%;
+      height: 40%;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  
+  .paginationBttns a{
+  
+      /* padding: 2px; */
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 8px;
+      border-radius: 5px;
+      border: 1px solid #2b2eff;
+      color: #2b2eff;
+      cursor: pointer;
+      text-decoration: none;
+     
+  }
+  
+  .paginationBttns a:hover{
+  
+      color: white;
+      background-color: #2b2eff;
+  
+  }
+  
+  .paginationActive a {
+  
+      color: white;
+      background-color: #2b2eff;
+  
+  
+  
+  }
+
+
+  .view-waiting{
+
+      width: 100%;
+      height: 300px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+
+  }
+
+
+.view-image{
+
+      width: 150px;
+      height: 150px;
+}
+
+.excel-btn{
+      border: none;
+      background-color: green;
+      color: white;
+      border-radius: 10px;
+      width: 120px;
+      height: 30px;
+      margin-bottom: 5px;
+}
