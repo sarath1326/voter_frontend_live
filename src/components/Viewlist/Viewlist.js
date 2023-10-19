@@ -11,7 +11,7 @@ import ReactPaginate from "react-paginate";
 import { ColorRing } from 'react-loader-spinner'
 import Swal from 'sweetalert2';
 import { useRef } from 'react';
-import { DownloadTableExcel } from 'react-export-table-to-excel';
+import { useDownloadExcel } from 'react-export-table-to-excel';
 
 
 
@@ -28,6 +28,17 @@ function Viewlist() {
 
 
   const tableRef = useRef()
+
+
+    const {onDownload}=useDownloadExcel({
+      
+      currentTableRef:tableRef.current,
+      filename:"voter list",
+      sheet:"voter list thamanokara 128"
+
+      
+   
+    })
 
 
   useEffect(() => {
@@ -311,15 +322,10 @@ function Viewlist() {
           <div className='container '>
 
 
-            <DownloadTableExcel
-              filename="users table"
-              sheet="users"
-              currentTableRef={tableRef.current}
-            >
+            
+              <button onClick={onDownload} className='excel-btn'  > Export excel </button>
 
-              <button className='excel-btn'  > Export excel </button>
-
-            </DownloadTableExcel>
+            
 
 
             <Table ref={tableRef} striped bordered hover>
