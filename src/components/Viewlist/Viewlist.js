@@ -253,7 +253,16 @@ function Viewlist() {
 
 
 
-
+    const csvData = [
+      [ "Name", "Housename", "Age", "Voter ID",],
+      ...res.map(({ name,housename,age,voterid }) => [
+        name,
+        housename,
+        age,
+        voterid
+        
+      ]),
+    ];
 
 
 
@@ -330,7 +339,7 @@ function Viewlist() {
             
               {/* <button onClick={onDownload} className='excel-btn'  > Export excel </button> */}
 
-              <CSVLink data={res} > export excel  </CSVLink> 
+              <CSVLink data={csvData} > export excel  </CSVLink> 
 
               
 
