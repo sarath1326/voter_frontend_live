@@ -127,7 +127,7 @@ function Home() {
 
               <button onClick={() => { navigate('/newadd') }} className='home-btn-new'> Add New</button>
 
-              <button onClick={viewfunc} className='home-btn-view'> View Liest </button>
+              <button onClick={viewfunc} className='home-btn-view'> View List </button>
 
             </>
 
