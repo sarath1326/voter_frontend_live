@@ -38,6 +38,13 @@ table th, td{
 
 }
 
+@media (max-width:500px){
+      .view-serch-box{
+
+            width:300px;
+      }
+}
+
 
 .view-delete-icone{
 
