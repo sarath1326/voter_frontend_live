@@ -159,6 +159,8 @@ function Form() {
 
                         /><br /><br/>
 
+                        <input type='file' accept='image/*' capture="environment" />
+
                         
 
 
